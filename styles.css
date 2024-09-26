@@ -1,0 +1,232 @@
+/* Place your CSS styles in this file */
+* {
+    box-sizing: border-box;
+}
+
+.end {
+    display: none;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+img {
+    display: block;
+    position: absolute;
+    height: 70%;
+    width: 95%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.ok {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("https://hieusach24h.com//wp-content//uploads//2021//09//bg-scaled.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.login {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: palevioletred;
+    text-shadow: 1px 0 3px pink;
+    font-size: 35px;
+}
+
+input {
+    width: 80%;
+    height: 80px;
+    margin-top: 10px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: palevioletred;
+    font-size: 25px;
+}
+
+input::placeholder {
+    color: red;
+    opacity: 0.3;
+}
+
+.user {
+    margin-bottom: -20px;
+    z-index: 999999999;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    padding: 28px;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 999px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+button:hover {
+    animation: appear 0.3s linear forwards;
+    color: white;
+}
+
+@keyframes appear {
+    to {
+        background-color: palevioletred;
+    }
+}
+
+.show {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    min-height: 100vh;
+}
+
+.textarea {
+    position: relative;
+    color: palevioletred;
+    width: 50%;
+    height: 300px;
+    background-color: transparent;
+    padding: 13px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px black;
+}
+
+/* #canvas {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 99;
+} */
+
+.pass {
+    z-index: 99999999;
+}
+
+.btn {
+    font-size: 60px;
+    width: 100px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    z-index: 999;
+    user-select: none;
+}
+
+.btn:hover {
+    animation: appear 0.5s linear forwards;
+}
+
+.left {
+    transform: translate(-10px);
+}
+
+.right {
+    transform: translateX(10px);
+}
+
+.error {
+    display: none;
+}
+
+
+.can {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes showText {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes destroy {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.video{
+    display: none;
+}
+.showText {
+    animation: showText 1.5s 1 linear forwards;
+}
+medium{
+    margin-top: 3px;
+    color: red;
+}
+
+p {
+    margin: 0;
+}
+
+.pages {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
